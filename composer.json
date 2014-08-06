@@ -1,0 +1,22 @@
+{
+    "name": "jonathano/crdt",
+    "description": "A collection of state based CRDTs",
+    "minimum-stability": "stable",
+    "license": "ISC",
+    "keywords": ["crdt"],
+    "authors": [
+        {
+            "name": "Jonathan Oddy",
+            "email": "jonathan@woaf.net"
+        }
+    ],
+    "require": {
+        "moodev/weasel": "0.15.2",
+        "mockery/mockery": "0.9.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "JonathanO\\Crdt": "lib"
+        }
+    }
+}
