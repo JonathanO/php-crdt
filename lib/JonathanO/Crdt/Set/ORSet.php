@@ -70,7 +70,7 @@ class ORSet implements Set {
         $result = array();
         foreach ($this->a->getValue() as $key => $addIdSet) {
             $removedIdSet = $this->r->get($key);
-            if (count(array_diff($addIdSet->getValue(), $removedIdSet->getValue())) > 0) {
+            if ($removedIdSet == null || count(array_diff($addIdSet->getValue(), $removedIdSet->getValue())) > 0) {
                 $result[] = $key;
             }
         }
